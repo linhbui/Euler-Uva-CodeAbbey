@@ -1,0 +1,12 @@
+def score( dice )
+  total = 0
+  f = Hash.new(0)
+  dice.each { |num| f[num] += 1 }
+  scoring = { 1 => 1000, 6 => 600, 5 => 500, 4 => 400, 3 => 300, 2 => 200 }
+  f.each do |key, value|
+    if value >= 3
+       total += scoring[key]
+       f[key] -= 3
+    end
+  end
+  total += (f[1]*100 + f[5]*50)
