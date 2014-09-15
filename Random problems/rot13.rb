@@ -4,6 +4,13 @@ ROT13 is a simple letter substitution cipher that replaces a letter with the let
 Create a method that takes a string as an argument and returns the string ciphered with Rot13. If there are numbers or special characters included in the string, they should be returned as they are. Only letters from the latin/english alphabet are used in the test cases, and only these should be shifted, like in the original Rot13 "implementation".
 =end
 
+# The magical Ruby way
+def rot13(string)
+  string.tr("A-Za-z", "N-ZA-Mn-za-m")
+end
+
+# The beginner way
+
 def rot13(string)
   abc = 'abcdefghijklmnopqrstuvwxyz'.split(//) * 2
   results = []
