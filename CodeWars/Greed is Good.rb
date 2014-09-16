@@ -9,6 +9,7 @@ Greed is a dice game played with five six-sided dice. Your mission, should you c
  Three 2's =>  200 points
  One   1   =>  100 points
  One   5   =>   50 point
+
 A single die can only be counted once in each roll. For example, a "5" can only count as part of a triplet (contributing to the 500 points) or as a single 50 points, but not both in the same roll.
 =end
 
