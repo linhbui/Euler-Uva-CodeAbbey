@@ -1,9 +1,8 @@
 def my_transpose array
   result = []
-  last = array.count - 1
-  for i in 0..last
+  arr.count.times do |i|
     col = []
-    for j in 0..last
+    arr.count.times do |j|
       col << array[j][i]
     end
     result << col
